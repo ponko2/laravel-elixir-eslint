@@ -6,7 +6,7 @@ var notify = require('gulp-notify');
 var elixir = require('laravel-elixir');
 var path   = require('path');
 
-elixir.extend('eslint', function (src, options) {
+elixir.extend('eslint', function(src, options) {
   src = src || [
     'public/js/**/*.js',
     '!public/js/vendor/**/*.js'
@@ -14,7 +14,7 @@ elixir.extend('eslint', function (src, options) {
 
   options = options || {};
 
-  var onError = function (err) {
+  var onError = function(err) {
     notify.onError({
       title: 'Laravel Elixir',
       subtitle: 'ESLint failed.',
@@ -25,7 +25,7 @@ elixir.extend('eslint', function (src, options) {
     this.emit('end');
   };
 
-  gulp.task('eslint', function () {
+  gulp.task('eslint', function() {
     return gulp.src(src)
       .pipe(eslint(options))
       .pipe(eslint.format())
