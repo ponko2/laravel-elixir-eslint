@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-eslint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Laravel Elixir ESLint Extension",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "dependencies": {
-    "gulp-eslint": "^0.4.3",
+    "gulp-eslint": "^0.11.1",
     "gulp-notify": "^2.0.0"
   }
 }

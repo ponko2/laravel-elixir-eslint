@@ -33,9 +33,9 @@ elixir.extend('eslint', function(src, options) {
       .on('error', onError)
       .pipe(notify({
         title: 'Laravel Elixir',
-        subtitle: 'ESLint passed.',
-        message: ' ',
-        icon: path.join(__dirname, '../laravel-elixir/icons/pass.png')
+        message: 'ESLint passed',
+        icon: path.join(__dirname, '../laravel-elixir/icons/pass.png'),
+        onLast: true
       }));
   });
 
