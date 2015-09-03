@@ -8,6 +8,7 @@ $ touch .eslintrc
 ```
 
 ```javascript
+// gulpfile.js
 var elixir = require('laravel-elixir');
 
 require('laravel-elixir-eslint');
@@ -20,8 +21,10 @@ elixir(function(mix) {
 ## Options
 
 ### Sources
-Glob or array of globs to read. Using this will overwrite all defaults.
 Type: `String` or `Array`
+
+Glob or array of globs to read. Using this will overwrite all defaults.
+
 Default:
 
 ```javascript
@@ -34,8 +37,11 @@ mix.eslint([
 _The prefix `!` is for excluding files._
 
 ### ESLint options
+
 Type: `Object`
+
 Options for ESLint.
+
 _See [eslint.org/docs/user-guide/configuring](http://eslint.org/docs/user-guide/configuring)_
 
 ## Credits
