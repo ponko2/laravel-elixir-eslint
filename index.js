@@ -21,5 +21,5 @@ Elixir.extend('eslint', function(src, options) {
             .pipe(eslint.format())
             .pipe(eslint.failAfterError());
 
-    }).watch(paths.src);
+    }).watch(paths.src.path);
 });
