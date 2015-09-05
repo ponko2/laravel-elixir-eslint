@@ -1,9 +1,10 @@
 'use strict';
 
-var gulp = require('gulp');
+var gulp   = require('gulp');
 var eslint = require('gulp-eslint');
-
 var Elixir = require('laravel-elixir');
+
+var notify = new Elixir.Notification;
 var config = Elixir.config;
 
 Elixir.extend('eslint', function (src, options) {
@@ -20,7 +21,8 @@ Elixir.extend('eslint', function (src, options) {
       .pipe(eslint(options || {}))
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
-      .on('error', function () {
+      .on('error', function (e) {
+        notify.error(e, 'ESLint Failed!');
         this.emit('end');
       });
   }).watch(paths.src.path);
