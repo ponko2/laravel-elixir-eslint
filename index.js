@@ -19,6 +19,9 @@ Elixir.extend('eslint', function (src, options) {
     return gulp.src(paths.src.path)
       .pipe(eslint(options || {}))
       .pipe(eslint.format())
-      .pipe(eslint.failAfterError());
+      .pipe(eslint.failAfterError())
+      .on('error', function () {
+        this.emit('end');
+      });
   }).watch(paths.src.path);
 });
