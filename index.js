@@ -16,7 +16,7 @@ Elixir.extend('eslint', function (src, options) {
     ]);
 
   var onError = function (err) {
-    notify.error(err, 'ESLint failed');
+    notify.error(err, 'ESLint Failed');
     this.emit('end');
   };
 
@@ -28,6 +28,6 @@ Elixir.extend('eslint', function (src, options) {
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
       .on('error', onError)
-      .pipe(notify.message('ESLint passed'));
+      .pipe(notify.message('ESLint Passed'));
   }).watch(paths.src.path);
 });
