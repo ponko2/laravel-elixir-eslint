@@ -15,13 +15,13 @@ Elixir.extend('eslint', function (src, options) {
       '!' + config.get('public.js.outputFolder') + '/vendor/**/*.js'
     ]);
 
+  var onError = function (err) {
+    notify.error(err, 'ESLint failed');
+    this.emit('end');
+  };
+
   new Elixir.Task('eslint', function () {
     this.log(paths.src);
-
-    var onError = function (err) {
-      notify.error(err, 'ESLint failed');
-      this.emit('end');
-    };
 
     return gulp.src(paths.src.path)
       .pipe(eslint(options || {}))
