@@ -10,6 +10,7 @@ var config = Elixir.config;
 Elixir.extend('eslint', function (src, options) {
   var paths = new Elixir.GulpPaths()
     .src(src || [
+      config.get('assets.js.folder') + '/**/*.js',
       config.get('public.js.outputFolder') + '/**/*.js',
       '!' + config.get('public.js.outputFolder') + '/vendor/**/*.js'
     ]);
