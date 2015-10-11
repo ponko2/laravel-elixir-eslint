@@ -27,7 +27,6 @@ Elixir.extend('eslint', function (src, options) {
       .pipe(eslint(options || {}))
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
-      .on('error', onError)
-      .pipe(notify.message('ESLint Passed'));
+      .on('error', onError);
   }).watch(paths.src.path);
 });
