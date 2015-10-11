@@ -18,13 +18,16 @@ Elixir.extend('eslint', function (src, options) {
   new Elixir.Task('eslint', function () {
     this.log(paths.src);
 
+    var onError = function (err) {
+      notify.error(err, 'ESLint failed');
+      this.emit('end');
+    };
+
     return gulp.src(paths.src.path)
       .pipe(eslint(options || {}))
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
-      .on('error', function (e) {
-        notify.error(e, 'ESLint Failed!');
-        this.emit('end');
-      });
+      .on('error', onError)
+      .pipe(notify.message('ESLint passed'));
   }).watch(paths.src.path);
 });
