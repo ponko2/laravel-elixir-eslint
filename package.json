@@ -26,5 +26,9 @@
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
     "laravel-elixir": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.6.0",
+    "eslint-config-ponko2": "^1.0.0"
   }
 }

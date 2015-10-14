@@ -4,7 +4,7 @@ var gulp   = require('gulp');
 var eslint = require('gulp-eslint');
 var Elixir = require('laravel-elixir');
 
-var notify = new Elixir.Notification;
+var notify = new Elixir.Notification();
 var config = Elixir.config;
 
 Elixir.extend('eslint', function (src, options) {
