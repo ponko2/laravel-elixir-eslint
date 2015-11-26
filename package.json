@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
-    "laravel-elixir": "^3.0.0"
+    "gulp-eslint": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^1.6.0",
