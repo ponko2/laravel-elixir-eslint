@@ -3,5 +3,9 @@
     "browser": true,
     "node": true
   },
-  "extends": "ponko2/lib/es5"
+  "extends": "ponko2/lib/es5",
+  "rules": {
+    "strict": 0,
+    "func-style": 0
+  }
 }
