@@ -26,7 +26,7 @@
     "gulp-eslint": "^1.1.1"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "eslint": "^2.0.0",
     "eslint-config-ponko2": "^1.5.0"
   }
 }
