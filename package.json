@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-eslint",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Laravel Elixir ESLint Extension",
   "main": "index.js",
   "scripts": {
