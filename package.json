@@ -1,32 +1,32 @@
 {
   "name": "laravel-elixir-eslint",
-  "version": "2.0.0",
   "description": "Laravel Elixir ESLint Extension",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ponko2/laravel-elixir-eslint.git"
-  },
-  "keywords": [
-    "laravel",
-    "elixir",
-    "eslint",
-    "gulp"
-  ],
+  "version": "2.0.0",
   "author": "Takahito Nakano",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ponko2/laravel-elixir-eslint/issues"
   },
-  "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "dependencies": {
     "gulp-eslint": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^2.0.0",
     "eslint-config-ponko2": "^2.0.1"
+  },
+  "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
+  "keywords": [
+    "elixir",
+    "eslint",
+    "gulp",
+    "laravel"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ponko2/laravel-elixir-eslint.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
