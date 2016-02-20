@@ -1,5 +1,8 @@
 # laravel-elixir-eslint
 
+[![npm version](https://badge.fury.io/js/laravel-elixir-eslint.svg)](https://badge.fury.io/js/laravel-elixir-eslint)
+[![Build Status](https://travis-ci.org/ponko2/laravel-elixir-eslint.svg?branch=master)](https://travis-ci.org/ponko2/laravel-elixir-eslint)
+
 ## Install
 
 ```sh
