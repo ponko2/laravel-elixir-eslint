@@ -30,6 +30,6 @@
     "url": "https://github.com/ponko2/laravel-elixir-eslint.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   }
 }
