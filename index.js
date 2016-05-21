@@ -4,7 +4,6 @@ var gulp   = require('gulp');
 var eslint = require('gulp-eslint');
 var Elixir = require('laravel-elixir');
 
-var notify = new Elixir.Notification();
 var config = Elixir.config;
 
 Elixir.extend('eslint', function (src, options) {
@@ -14,6 +13,8 @@ Elixir.extend('eslint', function (src, options) {
       config.get('public.js.outputFolder') + '/**/*.js',
       '!' + config.get('public.js.outputFolder') + '/vendor/**/*.js'
     ]);
+
+  var notify = new Elixir.Notification();
 
   var onError = function (err) {
     notify.error(err, 'ESLint Failed');
