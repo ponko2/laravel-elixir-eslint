@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "eslint": "^2.10.2",
-    "eslint-config-ponko2": "^3.3.1"
+    "eslint-config-ponko2": "^4.0.0"
   },
   "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "keywords": [
