@@ -7,7 +7,7 @@
     "url": "https://github.com/ponko2/laravel-elixir-eslint/issues"
   },
   "dependencies": {
-    "gulp-eslint": "^2.0.0"
+    "gulp-eslint": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^3.0.0",
