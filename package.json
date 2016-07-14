@@ -28,7 +28,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "peerDependencies": {
-    "laravel-elixir": ">=3.0.0-0 <6.0.0-0"
+    "laravel-elixir": ">=6.0.0-9"
   },
   "repository": {
     "type": "git",
