@@ -7,11 +7,11 @@
     "url": "https://github.com/ponko2/laravel-elixir-eslint/issues"
   },
   "dependencies": {
-    "gulp-eslint": "^3.0.0"
+    "gulp-eslint": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.0.0",
-    "eslint-config-ponko2": "^4.0.0"
+    "eslint": "^3.0.1",
+    "eslint-config-ponko2": "^4.2.0"
   },
   "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "keywords": [
@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "laravel-elixir": ">=3.0.0"
+    "laravel-elixir": ">=3.0.0-0 <6.0.0-0"
   },
   "repository": {
     "type": "git",
