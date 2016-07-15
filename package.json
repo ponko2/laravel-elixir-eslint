@@ -15,6 +15,9 @@
     "eslint": "^3.0.1",
     "eslint-config-ponko2": "^4.2.0"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "files": [
     "lib"
   ],
