@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this, global-require */
+
 let eslint;
 
 export default class ESLintTask extends Elixir.Task {
@@ -11,8 +13,8 @@ export default class ESLintTask extends Elixir.Task {
   constructor(name, paths, options) {
     super(name, null, paths);
 
-    this.output  = undefined;
-    this.options = options || {};
+    this.output  = '\u200B';
+    this.options = options;
   }
 
   /**
@@ -21,7 +23,6 @@ export default class ESLintTask extends Elixir.Task {
    * @returns {void}
    */
   loadDependencies() {
-    // eslint-disable-next-line global-require
     eslint = require('gulp-eslint');
   }
 
@@ -32,10 +33,7 @@ export default class ESLintTask extends Elixir.Task {
    */
   gulpTask() {
     return gulp.src(this.src.path)
-      .pipe((() => {
-        this.recordStep(`Executing ${this.ucName()}`);
-        return this.lint();
-      })())
+      .pipe(this.lint())
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
       .on('error', this.onError());
@@ -56,6 +54,7 @@ export default class ESLintTask extends Elixir.Task {
    * @returns {Stream} Object stream usable in Gulp pipes.
    */
   lint() {
+    this.recordStep(`Executing ${this.ucName()}`);
     return eslint(this.options);
   }
 }

@@ -7,7 +7,7 @@ import ESLintTask from '../ESLintTask';
  * @param {object|null}       options ESLint options
  * @returns {void}
  */
-function task(src, options) {
+function task(src, options = {}) {
   // eslint-disable-next-line no-new
   new ESLintTask('eslint', getPaths(src), options);
 }
