@@ -10,8 +10,8 @@
     "gulp-eslint": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.0.1",
-    "eslint-config-ponko2": "^6.0.0"
+    "eslint": "^3.8.1",
+    "eslint-config-ponko2": "^7.0.0"
   },
   "homepage": "https://github.com/ponko2/laravel-elixir-eslint",
   "keywords": [
