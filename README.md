@@ -5,13 +5,23 @@
 
 ## Install
 
+### Laravel Elixir >=3.0.0-0 <6.0.0-0
+
 ```sh
 $ npm install laravel-elixir-eslint --save-dev
 $ touch .eslintrc
 ```
 
+### Laravel Elixir >=6.0.0-11
+
+```sh
+$ npm install laravel-elixir-eslint@beta --save-dev
+$ touch .eslintrc
+```
+
+### gulpfile.js
+
 ```javascript
-// gulpfile.js
 var elixir = require('laravel-elixir');
 
 require('laravel-elixir-eslint');
