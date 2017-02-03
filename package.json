@@ -1,7 +1,7 @@
 {
   "name": "laravel-elixir-eslint",
   "description": "Laravel Elixir ESLint Extension",
-  "version": "4.0.0-4",
+  "version": "4.0.0",
   "author": "Takahito Nakano",
   "bugs": {
     "url": "https://github.com/ponko2/laravel-elixir-eslint/issues"
