@@ -5,29 +5,41 @@
 
 ## Install
 
-### Laravel Elixir >=3.0.0-0 <6.0.0-0
-
 ```sh
 $ npm install laravel-elixir-eslint --save-dev
 $ touch .eslintrc
 ```
 
-### Laravel Elixir >=6.0.0-11
+## Usage
 
-```sh
-$ npm install laravel-elixir-eslint@beta --save-dev
-$ touch .eslintrc
-```
-
-### gulpfile.js
+### Example Gulpfile
 
 ```javascript
+// gulpfile.js
 var elixir = require('laravel-elixir');
 
 require('laravel-elixir-eslint');
 
 elixir(function(mix) {
   mix.eslint();
+});
+```
+
+### Advanced example
+
+```javascript
+var elixir = require('laravel-elixir');
+var config = elixir.config;
+
+require('laravel-elixir-eslint');
+
+elixir(function(mix) {
+  mix.browserify('main.js')
+    .version(['js/main.js'])
+    .eslint([
+      config.get('assets.js.folder') + '/**/*.js',
+      '!' + config.get('public.js.outputFolder') + '/main.js'
+    ]);
 });
 ```
 
@@ -43,7 +55,7 @@ Default:
 ```javascript
 mix.eslint([
   'public/js/**/*.js',
-  '!public/js/vendor/**/*.js'
+  'resources/assets/js/**/*.js'
 ]);
 ```
 
