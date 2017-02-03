@@ -19,7 +19,7 @@ function task(src, options = {}) {
  * @returns {GulpPaths} Gulp src paths
  */
 function getPaths(src) {
-  const config = Elixir.config;
+  const {config} = Elixir;
 
   return new Elixir.GulpPaths()
     .src(src || [
